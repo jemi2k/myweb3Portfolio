@@ -7,7 +7,7 @@ const Contact = ({state}) => {
         const {contract}=state;
         const resumeDetails=async()=>{
             const resumeCid = await contract.methods.resumeLink().call();
-            setResume("https://gateway.pinata.cloud/ipfs/"+resumeCid);
+            setResume("https://scarlet-neat-sole-697.mypinata.cloud/ipfs/QmUVjENMoHmxNZMBAGbA45YCysZZg51gGNKtV6YcUnNuxR");
         }
         contract && resumeDetails();
     },[state])
@@ -18,7 +18,7 @@ const Contact = ({state}) => {
                 Interested?
                 Let's Get In Touch!
             </h1>
-            <a href={resume} target='_blank' rel="noopener noreferrer">
+            <a href="https://scarlet-neat-sole-697.mypinata.cloud/ipfs/QmUVjENMoHmxNZMBAGbA45YCysZZg51gGNKtV6YcUnNuxR" target='_blank' rel="noopener noreferrer">
                 <button className="downlodeBTN">
                     View Resume
                 </button>

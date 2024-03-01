@@ -7,14 +7,14 @@
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    /* gap: ; */
+    gap: 12px; 
 }
 
 .project-section .title {
     font-size: 28px;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     padding-bottom: 4px;
-    border-bottom-style: solid;
+    border-bottom-style: dotted;
     border-bottom-width: 2px;
     width: fit-content;
 }
@@ -22,21 +22,28 @@
 /* =========card========== */
 .project-card {
     height: 400px;
-    width: 300px;
-    background-color: var(--color-blue);
+    width: 350px;
+    color: white;
+    background-color:  var(--color-bg);
+    border: 1px solid rgb(252, 252, 139);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     border-radius: 10px;
     transition: 400ms;
+    
+    
 }
 .project-card:hover {
     transform: scale(1.06);
-    color: white;
+    color: black;
+    background-color:rgb(252, 252, 139);
+    
+
 }
 
-.project-card .card-img  {
+/* .project-card .card-img  {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -47,10 +54,32 @@
 .project-card .card-img img {
     margin-top: 14px;
     border-radius: 8px;
-    width: 274px;
+    width: 345px;
     height: 274px;
 
+} */
+
+.project-card .card-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 345px;
+    height: 274px; /* Adjust the height as needed */
+    overflow: hidden; /* Ensure the image does not overflow the card */
+    border-radius: 8px;
+    
 }
+
+.project-card .card-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensure the image covers the entire container */
+}
+
+
+
+
+
 .card-wrapper a{
     text-decoration: none;
     color: white;
@@ -60,15 +89,33 @@
     font-weight: 800;
     text-align: center;
     margin: 12px 14px 0px 14px;
+    color: rgb(179, 169, 157);   
 }
+.project-section .card-text:hover h3 {
+    font-weight: 800;
+    text-align: center;
+    margin: 12px 14px 0px 14px;
+    color: rgb(17, 5, 5);
+}
+
 
 .project-section .card-text p {
     margin: 10px 14px 0px 14px;
     font-weight: 300;
     text-align: center;
     opacity: 0.8;
+    color: rgb(179, 169, 157);
 
 }
+
+.project-section .card-text:hover p {
+    margin: 10px 14px 0px 14px;
+    font-weight: 300;
+    text-align: center;
+    opacity: 0.8;
+    color: rgb(17, 5, 5);
+}
+
 
 .project-section .card-wrapper {
     display: flex;
@@ -78,16 +125,20 @@
 }
 
 .project-section .donate{
+    color: black;
     cursor: pointer;
     font-size: 16px;
-    font-weight: 600;
+  
     padding: 8px 24px 8px 24px;
-    border-radius: 20px;
-    border: 1px solid var(--color-blue);
+    border-radius: 5px;
+    border: 1px solid var(--color-bg);
     opacity: 0.9;
+    background-color: rgb(252, 252, 139);
 }
 .donate:hover{
-background-color:var(--color-blue);
+color: aliceblue;    
+background-color:var(--color-bg);
+border: 1px solid rgb(252, 252, 139);
 }
 
 .project-section .icon{

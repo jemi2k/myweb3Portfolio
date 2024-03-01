@@ -6,8 +6,8 @@
     justify-content: center;
     align-items: center;
     gap: 80px;
-    border-top: 1px var(--color-blue) solid;
-    border-bottom: 1px var(--color-blue) solid;
+    border-top: 1px rgb(252, 252, 139) solid;
+    border-bottom: 1px rgb(252, 252, 139) solid;
 
 }
 .skills-section img{

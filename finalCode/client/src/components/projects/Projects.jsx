@@ -2,6 +2,10 @@ import React, { useEffect, useState} from 'react'
 import { FaDonate } from 'react-icons/fa';
 import { Modal, ModalHeader, ModalBody, Row, Button } from "reactstrap"
 import "./Projects.css"
+import web3 from "../../assets/web31.jpg"
+import Dmarket from "../../assets/dmarket.jpg"
+import reixport from "../../assets/reixport1.jpg"
+import cosmos from "../../assets/cosmos.jpg"
 
 const Projects = ({state}) => {
     const [modal, setModal] = useState(false);
@@ -25,24 +29,42 @@ const Projects = ({state}) => {
             alert("Transaction Succesful");
         }
     catch(error){
-       alert("Transaction Not Succesful");
+       alert("Transaction Not Succesful! Connect Wallet to Send");
     }
 }
     return (
         <section className="project-section">
-            <h1 className="title">Projects </h1>
+            <h1 className="title">Some Projects, More on <a href= "https://github.com/jemi2k/">github</a> </h1>
+           
+
             <div className="card-wrapper">
-                 {projects!=="" && projects.map((project)=>{
-                    const githubLink=`https://github.com/kshitijofficial/${project.githubLink}`
-                    return ( <a href= {githubLink} className="project-card" target='_blank' rel="noopener noreferrer" >
+                 <a href= "https://github.com/jemi2k/web3wave_web3event" className="project-card" target='_blank' rel="noopener noreferrer" >
                     <div className="card-img">
-                        <img src={`https://gateway.pinata.cloud/ipfs/${project.image}`} alt="" /></div>
+                        <img src={web3} alt="" /></div>
                     <div className="card-text">
-                        <h3>{project.name}</h3>
-                        <p>{project.description}</p>
+                        <h3>Web3Wave</h3>
+                        <p>Event management platform integrating NFT ticketing</p>
                     </div>
-                </a>)
-                })} 
+                </a>
+                <a href= "https://github.com/jemi2k/dmarket" className="project-card" target='_blank' rel="noopener noreferrer" >
+                    <div className="card-img">
+                        <img src={Dmarket} alt="" /></div>
+                    <div className="card-text">
+                        <h3>DMarket</h3>
+                        <p>Decentralized Online Marketplace</p>
+                    </div>
+                </a>
+
+                <a href= "https://github.com/jemi2k/cosmicweb3" className="project-card" target='_blank' rel="noopener noreferrer" >
+                    <div className="card-img">
+                        <img src={cosmos} alt="" /></div>
+                    <div className="card-text">
+                        <h3>Cosmos</h3>
+                        <p>NFT Minting DAPP</p>
+                    </div>
+                </a>
+              
+                
            
             </div>
  {/*  =========popup bootstrap==========  */}
@@ -56,14 +78,14 @@ const Projects = ({state}) => {
                                 <Row>
                                     <input id="eth" type="text" />
                                         <Button className='mt-4' >
-                                            Send
+                                            Donate
                                         </Button>
                                 </Row>
                             </form>
                         </ModalBody>
                     </Modal>
                     {/*  =========popup bootstrap end==========  */}
-                    <p className='donate' onClick={() => setModal(true)}>Liked the project's ? Consider donating Eth's <FaDonate className='icon' /></p>
+                    <p className='donate' onClick={() => setModal(true)}>Enjoyed the project? Support with ETH donations!</p>
         </section>
     )
 }

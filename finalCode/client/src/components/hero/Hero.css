@@ -26,11 +26,11 @@
 
 .hero-img .img-container img {
 
-    width: 250px;
+    width: 350px;
     height: auto;
-    border-radius: 40px 0px 40px 0px;
-    border-right: 6px solid var(--color-blue);
-    border-bottom: 6px solid var(--color-blue);
+    border-radius: 5px 5px 5px 5px;
+    border-right: rgb(252, 252, 139);;
+    border-bottom: rgb(252, 252, 139);;
 
 }
 
@@ -50,7 +50,7 @@
 }
 
 .hero-text p span {
-    color: var(--color-blue);
+    color: rgb(252, 252, 139);
     font-size: 16px;
     font-weight: 400;
 
@@ -73,17 +73,18 @@
 
 .hero-text .msg-btn {
     margin-top: 36px;
-    color: white;
+    color: rgb(0, 0, 0);
     font-weight: 400;
-    background-color: var(--color-blue);
+    background-color: rgb(252, 252, 139);
     height: 42px;
     width: 200px;
-    border: 2px solid rgb(86, 88, 226);
-    border-radius: 20px 0 20px 0px;
+    border: 1px solid rgb(252, 252, 139);
+    border-radius: 5px 5px 5px 5px;
 }
 
 .hero-text .msg-btn:hover {
     background-color: var(--color-bg);
+    color: white;
 }
 
 /* .hero-text .connect-btn {

@@ -1,6 +1,6 @@
 import React, { useEffect, useState} from 'react'
 import { Modal, ModalBody, Row } from "reactstrap"
-import heroImg from '../../assets/hero-img.png'
+import heroImg from '../../assets/jemi1.jpg'
 import './Hero.css'
 
 const Hero = ({state}) => {
@@ -24,12 +24,15 @@ const Hero = ({state}) => {
         contract && cidOfImage();
       },[state])
     return (
+        <>
+      
         <section className="hero">
         <div className="container">
             <div className="hero-text">
-                <p><span>Kshitij </span>
-                    is a Full-Stack Blockchain Developer From India.</p>
-                <h1>I develop decentralised apps in web3 space.</h1>
+                <p><span>Ermias B. </span>
+                    is a Blockchain Developer.</p>
+                <h1>I specialize in crafting decentralized apps on the web3 platform as a 
+                   Blockchain Engineer</h1>
                 <h3>{description}</h3>
                 {/*  =========popup bootstrap==========  */}
 
@@ -37,7 +40,8 @@ const Hero = ({state}) => {
                     <ModalBody>
                             <Row className="text-align">
                                 <label htmlFor="" toggle={() => setModal(!modal)}>
-                                    Mail Id - Kshitij123@gmail.com
+                                    <p>Email - jermijwll@gmail.com</p>
+                                    <p>Phone No - +251-949-428-860</p>
                                 </label>
 
                             </Row>
@@ -51,11 +55,13 @@ const Hero = ({state}) => {
             <div className="hero-img">
 
                 <div className="img-container">
-                    <img src={`https://gateway.pinata.cloud/ipfs/${cid}`} alt="profilePhoto" />
+                    <img src={heroImg} alt="profilePhoto" />
+                    {/* <img src={`https://gateway.pinata.cloud/ipfs/${cid}`} alt="profilePhoto" /> */}
                 </div>
             </div>
         </div>
     </section>
+    </>
     )
 }
 

@@ -43,7 +43,7 @@ contract Portfolio{
   }
 
   modifier onlyManager(){
-      require(manager==msg.sender,"You are not the manager");
+      require(manager==msg.sender,"You are not the owner");
       _;
   }
   

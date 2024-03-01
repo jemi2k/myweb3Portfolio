@@ -17,7 +17,7 @@ const Wallet =({saveState})=>{
          setConnected(false);
          saveState({web3:web3,contract:contract});
       }catch(error){
-        alert("Please Install Metamask");
+        alert("Please Install Web3 Wallet like Metamask");
       }
         
       }
