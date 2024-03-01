@@ -13,41 +13,6 @@ Decentralize Portfolio is a decentralized application (DApp) built on the Ethere
 
 ## Installation
 
-### For Starter Project
-
-To run the Decentralize Portfolio starter project locally, follow these steps:
-
-1. Clone the repository:
-
-   ```bash
-   git clone https://github.com/kshitijofficial/Decentralize-Portfolio.git
-   ```
-
-2. Navigate to the starterCode directory:
-
-   ```bash
-   cd Decentralize-Portfolio/starterCode
-   ```
-
-3. Navigate to the client directory:
-
-   ```bash
-   cd client
-   ```
-
-4. Install the required dependencies:
-
-   ```bash
-   npm install
-   ```
-
-5. To run the application:
-
-   ```bash
-   npm run dev
-   ```
-
-6. Open your browser and visit `http://localhost:5173` to access the Decentralize Portfolio starter application.
 
 ### For Final Project
 
@@ -56,7 +21,7 @@ To run the Decentralize Portfolio final project locally, follow these steps:
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/kshitijofficial/Decentralize-Portfolio.git
+   git clone https://github.com/jemi2k/myweb3Portfolio.git
    ```
 
 2. Navigate to the finalCode directory:
