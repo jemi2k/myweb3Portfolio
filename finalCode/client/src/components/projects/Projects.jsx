@@ -60,7 +60,7 @@ const Projects = ({state}) => {
                         <img src={cosmos} alt="" /></div>
                     <div className="card-text">
                         <h3>Cosmos</h3>
-                        <p>NFT Minting DAPP</p>
+                        <p>NFT Minting DAPP, It allows you to create and edit NFTs using SVG format, and then mint!</p>
                     </div>
                 </a>
               
