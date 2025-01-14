@@ -84,7 +84,7 @@ const Experience = ({state}) => {
                         Providing top-notch Web3 development and services on Upwork and Remote platforms, with active contributions to 
                             leading open-source Web3 projects like Warden Protocol, Farcaster, and more on GitHub..</p>
                         <p >
-                         <a className="card-text4" href="https://www.insa.gov.et/web/en"> Upwork and Remote </a> 
+                         <a className="card-text4" href="https://www.upwork.com/freelancers/~010c63bf25dbb7c041"> Upwork and Remote </a> 
                         </p>
                     </div>
                     <div className="edu-card">
