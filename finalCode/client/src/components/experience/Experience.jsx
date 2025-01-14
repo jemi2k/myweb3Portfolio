@@ -75,6 +75,18 @@ const Experience = ({state}) => {
                 {/* experience */}
                 <div className="education">
                     <h1 className="edu-title">Experience</h1>
+                     <div className="edu-card">
+                        <p className="card-text1">
+                            <SlCalender className='icon' /> July 2024 - 
+                        </p>
+                        <h3 className="card-text2">Upwork and Remote Plus Web3 Open Source Contributor</h3>
+                        <p className="card-text3">
+                        Providing top-notch Web3 development and services on Upwork and Remote platforms, with active contributions to 
+                            leading open-source Web3 projects like Warden Protocol, Farcaster, and more on GitHub..</p>
+                        <p >
+                         <a className="card-text4" href="https://www.insa.gov.et/web/en"> Upwork and Remote </a> 
+                        </p>
+                    </div>
                     <div className="edu-card">
                         <p className="card-text1">
                             <SlCalender className='icon' /> July 2023 - October 2023
